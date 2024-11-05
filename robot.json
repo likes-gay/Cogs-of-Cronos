@@ -1,0 +1,208 @@
+{
+    "head": {
+        "top_hat": {
+            "name": "Top Hat",
+            "desc": "A tall, black top hat adorned with intricate brass gears and cogs, giving it a sophisticated yet mechanical look.",
+            "strength": 0,
+            "defense": 0,
+            "cost": 1
+        },
+        "steam_breath": {
+            "name": "Steam Breath",
+            "desc": "A powerful burst of scalding steam emitted from the mouth, capable of causing severe burns.",
+            "strength": 0,
+            "defense": 0,
+            "cost": 8
+        },
+        "fire_breath": {
+            "name": "Fire Breath",
+            "desc": "A fierce jet of flames expelled from the mouth, incinerating anything in its path.",
+            "strength": 10,
+            "defense": 2,
+            "cost": 10
+        },
+        "brass_goggles": {
+            "name": "Brass Goggles",
+            "desc": "A pair of sturdy brass goggles with adjustable lenses, perfect for protecting the eyes from debris and enhancing vision.",
+            "strength": 1,
+            "defense": 0,
+            "cost": 1
+        },
+        "monocle": {
+            "name": "Monocle",
+            "desc": "Elegant clockwork monocle with brass frame",
+            "strength": 1,
+            "defense": 0,
+            "cost": 1
+        },
+        "lens_focus": {
+            "name": "Lens Focus",
+            "desc": "Adjustable lens for enhanced vision",
+            "strength": 0,
+            "defense": 0,
+            "cost": 2
+        },
+        "big_tongue": {
+            "name": "Big Tongue",
+            "desc": "Large retractable mechanical tongue",
+            "strength": 0,
+            "defense": 0,
+            "cost": 3
+        },
+        "metal_jaw": {
+            "name": "Metal Jaw",
+            "desc": "Sturdy metal jaw with gears",
+            "strength": 0,
+            "defense": 0,
+            "cost": 4
+        },
+        "respirator_mask": {
+            "name": "Respirator Mask",
+            "desc": "Steam-powered mask for breathing",
+            "strength": 0,
+            "defense": 0,
+            "cost": 5
+        }
+    },
+    "torso": {
+        "chainsaw_arm": {
+            "name": "Chainsaw Arm",
+            "desc": "",
+            "strength": 0,
+            "defense": 0,
+            "cost": 0
+        },
+        "blow_torch": {
+            "name": "Blow Torch",
+            "desc": "",
+            "strength": 0,
+            "defense": 0,
+            "cost": 0
+        },
+        "energy_shield_generator": {
+            "name": "Energy Shield Generator",
+            "desc": "Glowing blue orb with pipes going in and out of it",
+            "strength": 0,
+            "defense": 0,
+            "cost": 0
+        },
+        "amored_plating": {
+            "name": "Armored Plating",
+            "desc": "Bulky steel plates attached all around the chest",
+            "strength": 0,
+            "defense": 0,
+            "cost": 0
+        },
+        "steam_powered_jetpack": {
+            "name": "Steam-Powered Jetpack",
+            "desc": "A gleaming brass and steel contraption, the steam-powered jetpack sports twin exhaust vents that emit billowing plumes of white vapor.",
+            "strength": 0,
+            "defense": 0,
+            "cost": 0
+        },
+        "wings": {
+            "name": "Wings",
+            "desc": "Razor sharp metal feathers hanging from a shiny steel frame attached to the back of the torso",
+            "strength": 0,
+            "defense": 0,
+            "cost": 0
+        },
+        "tesla_coil": {
+            "name": "Tesla Coil",
+            "desc": "Three rings surrounding a thick metal rod giving off a cold blue glow",
+            "strength": 0,
+            "defense": 0,
+            "cost": 0
+        },
+        "hammer": {
+            "name": "Hammer",
+            "desc": "A large metal hammer positioned where the hand was",
+            "strength": 0,
+            "defense": 0,
+            "cost": 0
+        },
+        "drill": {
+            "name": "Drill",
+            "desc": "A high power steam drill",
+            "strength": 0,
+            "defense": 0,
+            "cost": 0
+        },
+        "claws": {
+            "name": "Claws",
+            "desc": "sharp talon like blades",
+            "strength": 0,
+            "defense": 0,
+            "cost": 0
+        },
+        "gatling_gun": {
+            "desc": " a Small gun withe a tube going around the hand and into an ammunition box ",
+            "score": 0
+        },
+        "rocket_launcher": {
+            "name": "Rocket Launcher",
+            "desc": "A large and heavy tube attached around the upper side of the arm",
+            "strength": 0,
+            "defense": 0,
+            "cost": 0
+        },
+        "steam_powered_canon": {
+            "name": "Steam-Powered Canon",
+            "desc": "A large tube with clear pipes filled with steam going into it",
+            "strength": 0,
+            "defense": 0,
+            "cost": 0
+        }
+    },
+    "Legs": {
+        "hydrolic-powered legs": {
+            "name": "Hydrolic-powered legs",
+            "desc": "A mechanical powered legs",
+            "strength": 5,
+            "defense": 3,
+            "cost": 7
+        },
+        "steampowered legs": {
+            "name": "Steampowered legs",
+            "desc": "powerful legs with tubes full of steam pulsing all over it",
+            "strength": 6,
+            "defense": 4,
+            "cost": 8
+        },
+        "razor blades": {
+            "name": "Razor Blades",
+            "desc": "Sharp rotating blades for cutting through obstacles.",
+            "strength": 8,
+            "defense": 2,
+            "cost": 6
+        },
+        "saw blades": {
+            "name": "Saw Blades",
+            "desc": "Circular saw blades for slicing through tough materials.",
+            "strength": 7,
+            "defense": 2,
+            "cost": 5
+        },
+        "silver Lining": {
+            "name": "Silver Lining",
+            "desc": "Elegant silver trim for added style.",
+            "strength": 1,
+            "defense": 1,
+            "cost": 3
+        },
+        "copper_tubing": {
+            "name": "Copper Tubing",
+            "desc": "Durable copper tubes for enhanced durability.",
+            "strength": 2,
+            "defense": 3,
+            "cost": 4
+        },
+        "gold plating": {
+            "name": "Gold Plating",
+            "desc": "Luxurious gold coating for a premium look.",
+            "strength": 1,
+            "defense": 2,
+            "cost": 5
+        }
+    }
+}
