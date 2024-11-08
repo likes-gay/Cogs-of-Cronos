@@ -2,5 +2,28 @@ Baddie robots
 
 Player starts in the slums of the steampunk city where they have been collecting scrap trying to build up their fighter robot. After a long while, the player can finally create their robot, which is where we begin. 
 The player then has to traverse their way up the layers of the steampunk city, in order to try and overthrow the CORRUPT tyrant and change the life in the city for the better. 
-As the player does this they fight other robots along the way, gaining points to further upgrade their robot so they can continue further. The player will have to make their way around the city's layers by conversing with NPC's, 
+As the player does this they fight other robots along the way, gaining points to further upgrade their robot so they can continue further. The player will have to make their way around the city's layers by interacting with the and exploring the area around
+them, battling other robots, etc.
 
+Story starts with a brief explanation of how the world is today, a corrupt ruling over the city, dangerous streets, violence throughout especially utilising constructed robots, and describing the large inequality between citizens and the layers of the city,
+gradually getting richer and cleaner the higher you go up with less and less violence but more and more corruption. Then a big focus shifts to the president of the city, a ruler prioritising economic growth over the city's citizens. The explanation is meant to set a tone
+for the game and emerse the user into it's environment, describing how horrible it is to live on the lower layers and elevating the higher layers. The explanation ends with an introduction to the players living situation, a borderline homeless scrapper
+living on the lowest layer of the city.
+
+Chapter 1: Prologue: The first section takes place as the start of the prologue: Day 1. The user is told that they work as a scrapper, dismantling machinery to earn just barely enough to get by. Whilst on the job, word comes about of a revolution the citizens of the
+lower layer are planning, leading to the player being informed of the increased presence of law enforcement around the poorer areas, giving them a sense of danger and unease already. When they arrive to their job they're tasked with going through scrap in
+secret where the first gameplay aspect is introduced, designing the robot:   The player will have a set amount of points on the first day, and will then be given parts to choose after finding them in the scrap yard. These items will come in set of 3,
+for three rounds where the user can decide to spend their points on different parts which have varying strength, defence, and price values; each round they can choose to select between none and all three items depending on the amount of
+points they wish to spend that round, after they pass a round they can NOT go back to choose once more, as the items will have been 'lost forever' in the deepest depths of the scrap yard. For the first day the player selects parts for the head, then the second day the torso, and ending with the third day which is the legs.
+In between each scrapping section, the player will be given more information and lore about the city they're living in through NPC dialogue and other clues, acting as a break between the sections; this is where the player gets more and more informed about the upcoming revolution
+that is about to take place.
+
+Chapter 2: The beginning of the end: This second section begins with the player awaking to loud sounds of conflict outside, exiting from their house they are met with a battle between the law enforcement and the local residents the revolution having
+seemingly already begun. Because of the conflict and danger the player will now need to navigate their way to the scrap yard where their robot is located making sure not to get involved in the violent fights taking place. As they make their way through the 
+city, they'll find that the area is now different from how it was just yesterday, streets are filled with scrap and broken robots, evidence of the brewing conflict of the city. They find their way to the scrap yard where they find their worried co-workers
+and are illuminated on the situation, with suspicion of an upcoming revolution, the government decided to put a pre-emptive stop to it, which explodes into the all out brawl happening everywhere as of now. This is when the player decides to take place in
+the revolution, unveiling their robot. The player is now given more freedom to explore, only tasked with "reach the next layer" as their goal. Exploration is the next gameplay asepct:     When exploring, the player will be able to find secrets and more
+information/lore filling out the game, along with high quality scrap, giving the player a few points to spend on their robot in the future; Exploration sections will take the player around the city with a goal to get from point A to point B, with potential
+robot battles along the way. Some battles will be completely avoidable in which the player can choose to prioritise getting through as fast as possible and skipping them, or completing the fights and gaining extra points and parts. For this first layer the
+exploration will be the most simple, with only a few easy battles to complete, and a small amount of other things to find. When they find their way to the exit of the layer they'll have to complete one last battle a slightly harder robot to end the first 
+level/layer.

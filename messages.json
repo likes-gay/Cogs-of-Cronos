@@ -1,0 +1,13 @@
+{
+    "Welcome Screen": "Welcome To Cogs of Chronos",
+    "Scene 1": "1873, England. The city of Belhelm is on the verge of collapse from crime and corruption, but that does not concern you as you are on the way to the scrap yard for work",
+    "Scene 1 Question": "Should I take the short cut, or should I go the usual way, but I could also go the longer way and meet with BOB ",
+    "scene 2.1": "In this scene you took the short cut and have run into a problem there are three ruffians in your way what shall you do",
+    "scene 2.1 Question": "What shall thy do, Go back or go past them",
+    "scene 2.1.1": "In this scene you run back and decide not to go that way for today and go another path",
+    "scene 2.1.2": "In this scene you decide to go past the ruffians, they rob you of 2 cogs and let you off with a warning ",
+    "scene 2.2": "you take the normal way and nothing new happens and you get to the scrapyard",
+    "scene 2.3": "You take the longer route meaning that you may be a bit late but you get to meet BOB",
+    "scene 2.3 Question": "BOB offers you a blueprint for 2 cogs saying this is your lucky day do you take it",
+    "scene 2.3.1": ""
+}
