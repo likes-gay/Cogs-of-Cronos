@@ -7,7 +7,7 @@
             "defence": 1,
             "cost": 1
         },
-        "scalding steam_breath": {
+        "scalding_steam_breath": {
             "name": "Scalding Steam Breath",
             "desc": "A powerful burst of scalding steam emitted from the mouth, capable of causing severe burns.",
             "attack": 7,
@@ -31,8 +31,8 @@
         "monocle": {
             "name": "Monocle",
             "desc": "Elegant clockwork monocle with brass frame",
-            "attack": 1,
-            "defence": 0,
+            "attack": 0,
+            "defence": 1,
             "cost": 1
         },
         "lens_focus": {
@@ -45,23 +45,30 @@
         "big_tongue": {
             "name": "Big Tongue",
             "desc": "Large retractable mechanical tongue",
-            "attack": 0,
-            "defence": 2,
+            "attack": 2.5,
+            "defence": 1,
             "cost": 3
         },
         "metal_jaw": {
             "name": "Metal Jaw",
             "desc": "Sturdy metal jaw with gears",
-            "attack": 0,
-            "defence": 0,
+            "attack": 2,
+            "defence": 1,
             "cost": 4
         },
         "respirator_mask": {
             "name": "Respirator Mask",
             "desc": "Steam-powered mask for breathing",
             "attack": 0,
-            "defence": 0,
+            "defence": 1,
             "cost": 5
+        },
+        "greater_shield_generator": {
+            "name": "Greater Shield Generator",
+            "desc": "the highest level of shield technology that has been achived and is only used for ones of highest status and has the ability to reflect practically all attacks",
+            "attack": 5,
+            "defence": 10,
+            "cost": 10
         }
     },
     "torso": {
@@ -104,7 +111,7 @@
             "name": "Wings",
             "desc": "Razor sharp metal feathers hanging from a shiny steel frame attached to the back of the torso",
             "attack": 0,
-            "defence": 2,
+            "defence": 3,
             "cost": 4
         },
         "tesla_coil": {
@@ -136,7 +143,7 @@
             "cost": 4
         },
         "gatling_gun": {
-            "name": "Gatling_gun",
+            "name": "Gatling Gun",
             "desc": " a Small gun with a tube going around the hand and into an ammunition box ",
             "attack": 6,
             "defence": 3,
@@ -147,7 +154,7 @@
             "desc": "A large and heavy tube attached around the upper side of the arm, designed to fire explosives",
             "attack": 8,
             "defence": 2,
-            "cost": 5
+            "cost": 7
         },
         "steam_powered_canon": {
             "name": "Steam-Powered Canon",
@@ -159,13 +166,13 @@
     },
     "Legs": {
         "hydraulic_powered_legs": {
-            "name": "Hydraulic-powered legs",
+            "name": "Hydraulic-Powered Legs",
             "desc": "A mechanical powered legs",
             "attack": 5,
             "defence": 3,
             "cost": 7
         },
-        "steam_driven boosters": {
+        "steam_driven_boosters": {
             "name": "steam driven boosters",
             "desc": "steam-powered boosters to propel forward with incredible speed",
             "attack": 3,
@@ -179,35 +186,35 @@
             "defence": 4,
             "cost": 8
         },
-        "razor blades": {
+        "razor_blades": {
             "name": "Razor Blades",
             "desc": "Sharp rotating blades for cutting through obstacles.",
             "attack": 8,
             "defence": 2,
             "cost": 6
         },
-        "saw blades": {
+        "saw_blades": {
             "name": "Saw Blades",
             "desc": "Circular saw blades for slicing through tough materials.",
             "attack": 7,
             "defence": 2,
             "cost": 5
         },
-        "retractable_claw legs": {
+        "retractable_claw_legs": {
             "name": "Retractable Claw Legs",
             "desc": "Sharp mechanised claws that can enter / retract for swift slashing attacks and enhanced grip on surfaces",
             "attack": 9,
             "defence": 3,
             "cost": 5
         },
-        "grappling legs": {
-            "name": "Grappling legs",
+        "grappling_legs": {
+            "name": "Grappling Legs",
             "desc": "Retractable grappling hooks for swinging across gaps or pulling up to higher ground",
             "attack": 4,
             "defence": 2,
             "cost": 6
         },
-        "silver Lining": {
+        "silver_lining": {
             "name": "Silver Lining",
             "desc": "Elegant silver trim for added style.",
             "attack": 1,
@@ -217,51 +224,51 @@
         "copper_tubing": {
             "name": "Copper Tubing",
             "desc": "Durable copper tubes for enhanced durability.",
-            "attack": 2,
-            "defence": 4,
+            "attack": 0,
+            "defence": 3,
             "cost": 4
         },
-        "gold plating": {
+        "gold_plating": {
             "name": "Gold Plating",
             "desc": "Luxurious gold coating for a premium look.",
             "attack": 1,
             "defence": 2,
             "cost": 5
         },
-        "hydraulic pistons": {
+        "hydraulic_pistons": {
             "name": "Hydraulic Pistons",
             "desc": "powered by hydraulic systems that enable explosive jumps and powerful stomps, creating shock-waves that can knock back nearby foes",
-            "attack": 0,
-            "defence": 0,
-            "cost": 0
+            "attack": 3,
+            "defence": 4,
+            "cost": 5
         },
-        "Magnetic grippers": {
+        "magnetic_grippers": {
             "name": "Magnetic grippers",
             "desc": "legs equipped with powerful magnetic pads for scaling and clinging to metal surfaces effortlessly",
-            "attack": 0,
-            "defence": 0,
-            "cost": 0
+            "attack": 1,
+            "defence": 3,
+            "cost": 2
         },
         "articulated_spider_legs": {
             "name": "Articulated Spider Legs",
             "desc": "Multi-jointed legs resembling a spider's for exceptional balance and the ability to navigate difficult terrain with ease",
-            "attack": 0,
-            "defence": 0,
-            "cost": 0
+            "attack": 3,
+            "defence": 2,
+            "cost": 4
         },
-        "Integrated_shield_generators": {
+        "integrated_shield_generators": {
             "name": "Integrated Shield Generators",
             "desc": "deploys energy shields that protect from incoming attack and allowing for quick movement, providing both offense and defense in combat scenarios",
-            "attack": 0,
-            "defence": 0,
-            "cost": 0
+            "attack": 2,
+            "defence": 6,
+            "cost": 3
         },
-        "Stealth_mode_legs": {
+        "stealth_mode_legs": {
             "name": "Stealth Mode Legs",
             "desc": "Designed with sound-dampening technology allowing silent motion for sneaking up on foes or avoiding detection in critical situations",
-            "attack": 0,
-            "defence": 0,
-            "cost": 0
+            "attack": 3,
+            "defence": 1,
+            "cost": 2
         }
     }
 }
