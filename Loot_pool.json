@@ -1,5 +1,5 @@
 {
-    "lesser_loot_pool 0-8": [
+    "lesser_loot_box 0-8": [
         "top_hat",
         "brass_goggles",
         "monocle",
@@ -22,7 +22,7 @@
         "useless scrap",
         "useless scrap"
     ],
-    "normal_loot_pool 8-16": [
+    "normal_loot_box 8-16": [
         "blow_torch",
         "energy_shield_generator",
         "armoured_plating",
@@ -46,7 +46,7 @@
         "the mega ultra rare collectable with a 0.00000001% chance of getting",
         "special perk that generates 2 cogs per question 0.001"
     ],
-    "greater_loot_pool 16+": [
+    "greater_loot_box 16+": [
         "scalding_steam_breath",
         "fire_breath",
         "chainsaw_arm",
