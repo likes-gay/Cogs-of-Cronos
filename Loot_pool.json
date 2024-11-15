@@ -20,7 +20,8 @@
         "3 cogs",
         "5 cogs",
         "useless scrap",
-        "useless scrap"
+        "useless scrap",
+        "low-level-secret-information"
     ],
     "normal_loot_box 8-16": [
         "blow_torch",
@@ -44,7 +45,8 @@
         "10 cogs",
         "useless scrap",
         "the mega ultra rare collectable with a 0.00000001% chance of getting",
-        "special perk that generates 2 cogs per question 0.001"
+        "special perk that generates 2 cogs per question 0.001",
+        "secret-information"
     ],
     "greater_loot_box 16+": [
         "scalding_steam_breath",
@@ -58,7 +60,8 @@
         "20 cogs",
         "30 cogs",
         "usefull scrap",
-        "the mega ultra rare collectable with a 0.001% chance of getting"
+        "the mega ultra rare collectable with a 0.001% chance of getting",
+        "high-level-secret-information"
     ]
 
 }
