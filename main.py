@@ -1,4 +1,9 @@
-import sys, time
+import json
+import sys
+import time
+
+mssgs = json.load(open('messages.json'))
+robot = json.load(open('robot.json'))
 
 def type(text):
     for character in text:
@@ -6,6 +11,5 @@ def type(text):
       sys.stdout.flush()
       time.sleep(0.05)
 
+type(mssgs['Welcome Screen'])
 
-def intro():
-    type("Welcome to the game!\n")
