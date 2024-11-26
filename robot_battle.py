@@ -1,28 +1,40 @@
 import json
 import random
+import pytermgui as ptg
+from partpicker_ui import part_picker
+from part_manager import part_manager
 
 points = 10
 
-parts = json.load(open('robot.json'))
-purchased_parts = []
-
-def get_random_part():
-    return random.choice(list(parts.keys()))
-
-def get_part_not_purchased():
-    part = get_random_part()
-    while part in purchased_parts:
-        part = get_random_part()
-    return part
+with open('robot.json') as f:
+    parts = json.load(f)
 
 def part_selection_flow(points=10):
-    parts_list = [get_part_not_purchased() for i in range(3)]
-    parts_data = [parts[part] for part in parts_list]
-    parts_names = [part['name'] for part in parts_data]
+    part_manager_instance = part_manager()
 
     print('Welcome to the Robot Battle!')
     print(f'You have {points} points to spend on parts for your robot.')
-    print('Here are the available parts:', ", ".join(parts_names))
 
+
+    manager = ptg.WindowManager()
+
+    for i in range(3):
+        part = part_manager_instance.get_part_not_purchased()
+        window1 = part_picker(
+            partID=part,
+            name=part_manager_instance.parts[part]['name'],
+            desc=part_manager_instance.parts[part]['desc'],
+            attack=part_manager_instance.parts[part]['attack'],
+            defence=part_manager_instance.parts[part]['defence'],
+            cost=part_manager_instance.parts[part]['cost'],
+            part=part,
+            part_manager=part_manager_instance
+        ).build_window()
+    
+        manager.add(window1)
+    
+    manager.run()
+
+        
 
 part_selection_flow()
