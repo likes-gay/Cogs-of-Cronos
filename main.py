@@ -11,7 +11,7 @@ def type(text):
     for character in text:
         sys.stdout.write(character)
         sys.stdout.flush()
-        # time.sleep(0.05)
+        time.sleep(0.05)
 
 
 def delete_last_x_lines(lines):
@@ -41,7 +41,13 @@ def msg_wait():
 
 def short_wait():
     time.sleep(1)
+    print()
 
+def the_end():
+    #TODO
+    
+    print()
+    print("THE END")
 
 def title_output(message):
     os.system("clear")
@@ -53,18 +59,15 @@ def scene_1():
     type(mssgs["scene 1"])
     msg_wait()
     type(mssgs["scene 1 question"])
-    choice1 = get_input(["1", "2", "3"])
 
-    match choice1:
+    match get_input(["1", "2", "3"]):
         case "1":  # short cut
             type(mssgs["scene 1.1"])
             msg_wait()
             type(mssgs["scene 1.1 question"])
             msg_wait()
 
-            choice2 = get_input(["1", "2"])
-
-            match choice2:
+            match get_input(["1", "2"]):
                 case "1":  # run away
                     type(mssgs["scene 1.1.1"])
 
@@ -101,9 +104,8 @@ def scene_2():
     type(mssgs["scene 2.0.1"])
     msg_wait()
     type(mssgs["scene 2 question"])
-    choice1 = get_input(["1", "2", "3"])
 
-    match choice1:
+    match get_input(["1", "2", "3"]):
         case "1":  # first spot
             type(mssgs["scene 2.1"])
             short_wait()
@@ -121,11 +123,58 @@ def scene_2():
 
     msg_wait()
 
+def scene_3():
+    type(mssgs["scene 3"])
+    msg_wait()
+    
+    type(mssgs["scene 3 question"])
+    
+    match get_input(["1", "2"]):
+        case "1": #investigate trio
+            type(mssgs["scene 3.0.1"])
+            short_wait()
+            type(mssgs["scene 3.0.1.1"])
+            short_wait()
+            type(mssgs["scene 3.0.1.2"])
+            msg_wait()
+            
+            type(mssgs["scene 3.0.1 question"])
+            
+            match get_input(["1", "2"]):
+                case "1": #investigate and run into enforcers
+                    type(mssgs["scene 3.0.2.1"])
+                    short_wait()
+                    type(mssgs["scene 3.0.2.1.1"])
+                    msg_wait()
+                    print()
+                    type("YOU DIED")
+                    the_end()
+                    
+                case "2": #run back to street
+                    type(mssgs["scene 3.0.2.2"])
+                    short_wait()
+                    type(mssgs["scene 3.0.2.2.1"])
+                    short_wait()
+                    type(mssgs["scene 3.0.2.2.2"])
+                    short_wait()
+                    type(mssgs["scene 3.1.1.1"])
+                    short_wait()
+                    type(mssgs["scene 3.1.1.3"])
+                    
+        case "2": #ignored the trio
+            type(mssgs["scene 3.0.3.1"])
+    
+    msg_wait()
+    type(mssgs["scene 3.1.1.2"])
 
 def main():
     title_output(mssgs["Welcome Screen"])
 
-    # scene_1()
+    #scene_1()
+    
+    #TODO, implement random part picking for scene 2
+    #scene_2()
+    scene_3()
 
 
 if __name__ == "__main__":
