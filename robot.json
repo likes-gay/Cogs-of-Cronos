@@ -153,7 +153,7 @@
         },
         "claws": {
             "name": "Claws",
-            "desc": "sharp talon like blades, allows for slashing attacks and climbing or manoeuvring in tight spaces",
+            "desc": "sharp talon like blades, allows for slashing attacks and climbing or manoeuvering in tight spaces",
             "attack": 5,
             "defence": 2,
             "cost": 4,

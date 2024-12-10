@@ -2,10 +2,13 @@ import json
 import sys
 import time
 import os
+import random
+
 
 mssgs = json.load(open("messages.json"))
 robot = json.load(open("robot.json"))
 
+num_cogs = random.randint(20, 50)
 
 def type(text):
     for character in text:
@@ -24,13 +27,11 @@ def delete_last_x_lines(lines):
 
 
 def get_input(choices):
-    user_input = input("\n >>> ")
-    while user_input not in choices:
+    while (user_input := input("\n >>> ")) not in choices:
         print("Invalid input. Please try again.")
         time.sleep(1)
         delete_last_x_lines(2)
-        user_input = input(">>> ")
-
+        
     return user_input
 
 
@@ -49,11 +50,13 @@ def the_end():
     print()
     print("THE END")
 
-def title_output(message):
-    os.system("clear")
-    print(message)
-    print()
 
+def large_title():
+    print("""
+░█▀▀█ █▀▀█ █▀▀▀ █▀▀ 　 █▀▀█ █▀▀ 　 ░█▀▀█ █──█ █▀▀█ █▀▀█ █▀▀▄ █▀▀█ █▀▀ 
+░█─── █──█ █─▀█ ▀▀█ 　 █──█ █▀▀ 　 ░█─── █▀▀█ █▄▄▀ █──█ █──█ █──█ ▀▀█ 
+░█▄▄█ ▀▀▀▀ ▀▀▀▀ ▀▀▀ 　 ▀▀▀▀ ▀── 　 ░█▄▄█ ▀──▀ ▀─▀▀ ▀▀▀▀ ▀──▀ ▀▀▀▀ ▀▀▀
+""")
 
 def scene_1():
     type(mssgs["scene 1"])
@@ -168,8 +171,13 @@ def scene_3():
     type(mssgs["scene 3.1.1.2"])
 
 def main():
-    title_output(mssgs["Welcome Screen"])
-
+    large_title()
+    short_wait()
+    type(mssgs["Welcome Screen"])
+    short_wait()
+    print()
+    type(f"Starting funds: ⚙ {num_cogs}")
+    short_wait()
     #scene_1()
     
     #TODO, implement random part picking for scene 2
