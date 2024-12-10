@@ -178,7 +178,7 @@ def main():
     print()
     type(f"Starting funds: ⚙ {num_cogs}")
     short_wait()
-    #scene_1()
+    scene_1()
     
     #TODO, implement random part picking for scene 2
     #scene_2()
