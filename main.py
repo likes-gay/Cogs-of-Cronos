@@ -115,7 +115,15 @@ def scene_2():
         case "1":  # first spot
             type(mssgs["scene 2.1"])
             short_wait()
-            type(mssgs["scene 2.1.1"])
+            type(mssgs["scene 2.1.0.1"])
+            type(mssgs["scene 2.1.0.1 question"])
+            get_input(["1","2","3"])
+            if "1":
+                type(mssgs["scene 2.1.1"])
+            elif "2":
+                type(mssgs["scene 2.1.2"])
+            elif "3":
+                type(mssgs["scene 2.1.3"])
 
         case "2":  # second spot
             type(mssgs["scene 2.2"])
