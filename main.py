@@ -8,7 +8,7 @@ import random
 mssgs = json.load(open("messages.json"))
 robot = json.load(open("robot.json"))
 
-num_cogs = random.randint(20, 50)
+num_cogs = random.randint(10, 30)
 
 def type(text):
     for character in text:
@@ -57,6 +57,9 @@ def large_title():
 ░█─── █──█ █─▀█ ▀▀█ 　 █──█ █▀▀ 　 ░█─── █▀▀█ █▄▄▀ █──█ █──█ █──█ ▀▀█ 
 ░█▄▄█ ▀▀▀▀ ▀▀▀▀ ▀▀▀ 　 ▀▀▀▀ ▀── 　 ░█▄▄█ ▀──▀ ▀─▀▀ ▀▀▀▀ ▀──▀ ▀▀▀▀ ▀▀▀
 """)
+
+def scene_0():
+    type(mssgs["Intro charecter"])
 
 def scene_1():
     type(mssgs["scene 1"])
@@ -176,12 +179,13 @@ def main():
     type(mssgs["Welcome Screen"])
     short_wait()
     print()
+    scene_0()
     type(f"Starting funds: ⚙ {num_cogs}")
     short_wait()
     scene_1()
     
     #TODO, implement random part picking for scene 2
-    #scene_2()
+    scene_2()
     scene_3()
 
 

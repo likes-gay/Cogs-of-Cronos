@@ -1,8 +1,8 @@
 {
-  "Intro charecter": "Name: ?  Age: ?  Gender: ?  Station: ?  Location: ?  Personality: ?",
+  "Intro charecter": "Name: ? \nAge: ? \nGender: ? \nStation: ? \nLocation: ? \nPersonality: ? \n",
 
   "Welcome Screen": "Welcome To Cogs of Chronos",
-  "scene 1": "1873, England. The city of Belhelm is on the verge of collapse from crime and corruption, but that does not concern you as you are on the way to the scrap yard for work",
+  "scene 1": "\n1873, England. The city of Belhelm is on the verge of collapse from crime and corruption, but that does not concern you as you are on the way to the scrap yard for work",
   "scene 1 second day": "You once again see the dull streets of the lower city as you go to work",
   "scene 1 third day": "Your last day on work for the week you feel as if something is gonna happen soon but forget about it",
   "scene 1 question": "Should I take the short cut, or should I go the usual way, but I could also go the longer way and meet with BOB",
