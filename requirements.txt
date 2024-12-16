@@ -1,1 +1,1 @@
-PyTermGUI
+pyinstaller
