@@ -39,7 +39,7 @@ jobs:
         run: uv run pyinstaller -F main.py --hidden-import sys --add-data json_data/:json_data/ --name Cogs-of-Cronos-AdventureSoft
 
       - name: Upload artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: Cogs-of-Cronos-AdventureSoft-${{ matrix.os }}
           path: dist/Cogs-of-Cronos-AdventureSoft*
