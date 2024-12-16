@@ -36,7 +36,7 @@ jobs:
         run: uv pip install -r requirements.txt
 
       - name: Build with PyInstaller
-        run: uv run pyinstaller -F src/main.py --hidden-import sys --add-data ./json_data/:./json_data/ --name Cogs-of-Cronos-AdventureSoft
+        run: uv run pyinstaller -F src/main.py --hidden-import sys --add-data json_data/:./json_data/ --name Cogs-of-Cronos-AdventureSoft
 
       - name: Upload artifact
         uses: actions/upload-artifact@v3
