@@ -1,0 +1,75 @@
+name: Build BIN
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build-py-to-bin:
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [windows-latest, ubuntu-latest]
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@v4
+
+      - name: Set up Python
+        run: uv python install 3.12
+
+      - name: Setup venv
+        run: uv venv
+
+      - name: Activate venv Windows
+        if: matrix.os == 'windows-latest'
+        run: .venv\Scripts\activate
+
+      - name: Activate venv Linux
+        if: matrix.os == 'ubuntu-latest'
+        run: source .venv/bin/activate
+
+      - name: Install requirements
+        run: uv pip install -r requirements.txt
+
+      - name: Build with PyInstaller
+        run: uv run pyinstaller -F src/main.py --hidden-import sys --add-data src/resources/:./resources/ --name Cogs-of-Cronos-AdventureSoft
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: Cogs-of-Cronos-AdventureSoft-${{ matrix.os }}
+          path: dist/Cogs-of-Cronos-AdventureSoft*
+
+  publish:
+    needs: build-py-to-bin
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: write
+
+    steps:
+      - name: Download artifacts
+        uses: actions/download-artifact@v3
+        with:
+          name: Cogs-of-Cronos-AdventureSoft-windows-latest
+          path: windows-artifact
+
+      - name: Download artifacts
+        uses: actions/download-artifact@v3
+        with:
+          name: Cogs-of-Cronos-AdventureSoft-ubuntu-latest
+          path: linux-artifact
+
+      - name: Publish
+        uses: softprops/action-gh-release@v2.1.0
+        with:
+          files: |
+            windows-artifact/Cogs-of-Cronos-AdventureSoft.exe
+            linux-artifact/Cogs-of-Cronos-AdventureSoft
+          tag_name: v${{ github.run_number }}
+          prerelease: false
+          name: v${{ github.run_number }}
