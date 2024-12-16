@@ -5,8 +5,8 @@ import os
 import random
 
 
-mssgs = json.load(open("messages.json"))
-robot = json.load(open("robot.json"))
+mssgs = json.load(open("json_data/messages.json"))
+robot = json.load(open("json_data/robot.json"))
 
 num_cogs = random.randint(10, 30)
 
