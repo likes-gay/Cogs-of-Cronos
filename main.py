@@ -4,9 +4,14 @@ import time
 import os
 import random
 
+if getattr(sys, 'frozen', False):
+    mssgs = json.load(open(os.path.join(sys._MEIPASS, 'json_data/messages.json')))
+    robot = json.load(open(os.path.join(sys._MEIPASS, 'json_data/robot.json')))
+    
+else:
+    mssgs = json.load(open("json_data/messages.json"))
+    robot = json.load(open("json_data/robot.json"))
 
-mssgs = json.load(open("json_data/messages.json"))
-robot = json.load(open("json_data/robot.json"))
 
 num_cogs = random.randint(10, 30)
 
