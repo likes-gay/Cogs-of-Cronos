@@ -107,6 +107,7 @@ def scene_1():
 
             type(mssgs["scene 1.3.2/1.3.1"])
             # IMPLEMENT LOOSE TWO COGS
+            # MAKE IT SKIP "SECENE 2" AND START SCENE 2 FROM "SCENE 2.0.1"
 
 
 def scene_2():
@@ -133,14 +134,31 @@ def scene_2():
         case "2":  # second spot
             type(mssgs["scene 2.2"])
             short_wait()
-            type(mssgs["scene 2.1.2"])
+            type(mssgs["scene 2.2.0.1"])
+            type(mssgs["scene 2.2.0.1 question"])
+            get_input(["1","2","3"])
+            if "1":
+                type(mssgs["scene 2.2.1"])
+            elif "2":
+                type(mssgs["scene 2.2.2"])
+            elif "3":
+                type(mssgs["scene 2.2.3"])
 
         case "3":  # third spot
             type(mssgs["scene 2.3"])
             short_wait()
-            type(mssgs["scene 2.1.3"])
+            type(mssgs["scene 2.3.0.1"])
+            type(mssgs["scene 2.3.0.1 question"])
+            get_input(["1","2","3"])
+            if "1":
+                type(mssgs["scene 2.3.1"])
+            elif "2":
+                type(mssgs["scene 2.3.2"])
+            elif "3":
+                type(mssgs["scene 2.3.3"])
 
     msg_wait()
+    type(mssgs["scene 2 END"])
 
 def scene_3():
     type(mssgs["scene 3"])
