@@ -35,7 +35,7 @@ def get_input(choices):
     while (user_input := input("\n >>> ")) not in choices:
         print("Invalid input. Please try again.")
         time.sleep(1)
-        delete_last_x_lines(2)
+        delete_last_x_lines(3)
         
     return user_input
 
