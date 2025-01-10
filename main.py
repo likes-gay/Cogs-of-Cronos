@@ -168,41 +168,84 @@ def scene_3():
     
     match get_input(["1", "2"]):
         case "1": #investigate trio
-            type(mssgs["scene 3.0.1"])
+            type(mssgs["scene 3.1"])
             short_wait()
-            type(mssgs["scene 3.0.1.1"])
+            type(mssgs["scene 3.1.1"])
             short_wait()
-            type(mssgs["scene 3.0.1.2"])
+            type(mssgs["scene 3.1.1.1"])
             msg_wait()
             
-            type(mssgs["scene 3.0.1 question"])
+            type(mssgs["scene 3.1 question"])
             
             match get_input(["1", "2"]):
                 case "1": #investigate and run into enforcers
-                    type(mssgs["scene 3.0.2.1"])
+                    type(mssgs["scene 3.1.2"])
                     short_wait()
-                    type(mssgs["scene 3.0.2.1.1"])
+                    type(mssgs["scene 3.1.2.1"])
                     msg_wait()
                     print()
                     type("YOU DIED")
                     the_end()
                     
                 case "2": #run back to street
-                    type(mssgs["scene 3.0.2.2"])
+                    type(mssgs["scene 3.1.3"])
                     short_wait()
-                    type(mssgs["scene 3.0.2.2.1"])
+                    type(mssgs["scene 3.1.3.1"])
                     short_wait()
-                    type(mssgs["scene 3.0.2.2.2"])
+                    type(mssgs["scene 3.1.3.2"])
                     short_wait()
-                    type(mssgs["scene 3.1.1.1"])
+                    type(mssgs["scene 3.1.3.3"])
                     short_wait()
-                    type(mssgs["scene 3.1.1.3"])
+                    type(mssgs["scene 3.1.3.4"])
                     
         case "2": #ignored the trio
-            type(mssgs["scene 3.0.3.1"])
+            type(mssgs["scene 3.2"])
+            msg_wait()
+            type(mssgs["scene 3.2.1"])
     
+def scene_4():
+    type(mssgs["scene 4"])
     msg_wait()
-    type(mssgs["scene 3.1.1.2"])
+    type(mssgs["scene 4 question"])
+
+    match get_input(["1", "2"]):
+        case "1": #Leave through backdoor
+            type(mssgs["scene 4.1"])
+            msg_wait()
+            type(mssgs["scene 4.1 question"])
+            
+            match get_input(["1", "2"]):
+                case "1": # you try to run
+                    type(mssgs["scene 4.1.1"])
+                    msg_wait()
+                    print()
+                    type("YOU DIED")
+                    print()
+                    the_end()
+                
+                case "2": #you try to hide
+                    type(mssgs["scene 4.1.2"])
+                    msg_wait()
+                    print()
+                    type("YOU DIED")
+                    print()
+                    the_end()
+        
+        case "2": #Leave through the front
+            type(mssgs["scene 4.2"])
+            msg_wait()
+            type(mssgs["scene 4.2 question"])
+
+            match get_input(["1", "2", "3"]):
+                case "1": #you take short way
+                    type(mssgs["scene 4.2.1"])
+
+                case "2": #you take normal way
+                    type(mssgs["scene 4.2.2"])
+
+                case "3": #you take long way
+                    type(mssgs["scene 4.2.3"])
+
 
 def main():
     large_title()
