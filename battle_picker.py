@@ -2,6 +2,8 @@ import random
 import json
 import sys
 import time
+import os
+from openai import OpenAI
 
 with open("./json_data/robot.json") as f:
     parts = json.load(f)
@@ -39,7 +41,7 @@ def get_input(choices):
         
     return user_input
 
-def playerSelect():
+def player_select():
     type("Welcome to the scrapyard \n\n")
     time.sleep(.5)
     type("Here are the rules:\n")
@@ -75,5 +77,44 @@ def playerSelect():
     type("You didn't pick up any parts. \n")
     return
 
-print(playerSelect())
-                
+def analyse_game():
+    pass
+
+
+class GameAnalysis:
+    def __init__(self, gh_token):
+        self.gh_token = gh_token
+        self.client = OpenAI(
+            base_url="https://models.inference.ai.azure.com",
+            api_key=self.gh_token,
+        )
+        
+    def analyse_game(self, player_name, player_parts, computer_parts):
+        response = self.client.chat.completions.create(
+            messages=[
+                {
+                    "role": "system",
+                    "content": f'''
+                    In user messages following, you will be provided with the player's part selection and the computer's part selection.
+                    If you are not provided with two json objects (one for the computer and one for the player) you must respond with an error message.
+                    
+                    In response to the user's messages you should provide the following:
+                    OUTPUT IN VALID JSON (``` is not required) with keys "battleWinner" "battleDescription" "battleCalculation".
+                    Use steam punk era terminology and descriptions
+                    The battleWinner should be either "{player_name}" (player's robot) or OPPONENT.
+                    battleDescription should be a list of strings of each stage of the fight, make it dramatic!
+                    battleCalculation should be a sub object with "playerScore" and "opponentScore" which is the number used to decide who wins and by how much
+                    Use the attack and defence values to decided who wins''',
+                },
+                {
+                    "role": "user",
+                    "content": f"player_parts:{player_parts}, computer_parts:{computer_parts}",
+                }
+            ],
+            model="gpt-4o-mini",
+            temperature=1,
+            max_tokens=4096,
+            top_p=1
+        )
+        
+        print(response.choices[0].message.content)
