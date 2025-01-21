@@ -55,7 +55,7 @@ def player_select(day, part_type):
     else:
         type("The rules remain the same as your first visit\n")
     
-    for i in range(1,3):
+    for i in range(1,4):
         type(f"Searching pile {i}")
         type(".")
         time.sleep(.2)
