@@ -57,22 +57,18 @@ def large_title():
 """)
 
 def scene_0():
-    type(mssgs["Intro charecter"])
     type(mssgs["Welcome Screen"])
     short_wait()
     print()
 
 def scene_1():
     type(mssgs["scene 1"])
-    ()
     type(mssgs["scene 1 question"])
 
     match get_input(["1", "2", "3"]):
         case "1":  # short cut
             type(mssgs["scene 1.1"])
-            ()
             type(mssgs["scene 1.1 question"])
-            ()
 
             match get_input(["1", "2"]):
                 case "1":  # run away
@@ -87,7 +83,6 @@ def scene_1():
 
         case "3":  # long path see bob
             type(mssgs["scene 1.3"])
-            ()
             type(mssgs["scene 1.3 question"])
             choice3 = get_input(["1", "2"])
 
@@ -99,8 +94,6 @@ def scene_1():
                 case "2":  # decline
                     type(mssgs["scene 1.3.2"])
 
-            ()
-
             type(mssgs["scene 1.3.2/1.3.1"])
             # IMPLEMENT LOOSE TWO COGS
             # MAKE IT SKIP "SECENE 2" AND START SCENE 2 FROM "SCENE 2.0.1"
@@ -110,7 +103,6 @@ def scene_2():
     type(mssgs["scene 2"])
     short_wait()
     type(mssgs["scene 2.0.1"])
-    ()
     type(mssgs["scene 2 question"])
 
     match get_input(["1", "2", "3"]):
@@ -152,13 +144,10 @@ def scene_2():
                 type(mssgs["scene 2.3.2"])
             elif "3":
                 type(mssgs["scene 2.3.3"])
-
-    ()
     type(mssgs["scene 2 END"])
 
 def scene_3():
     type(mssgs["scene 3"])
-    ()
     
     type(mssgs["scene 3 question"])
     
@@ -169,7 +158,6 @@ def scene_3():
             type(mssgs["scene 3.1.1"])
             short_wait()
             type(mssgs["scene 3.1.1.1"])
-            ()
             
             type(mssgs["scene 3.1 question"])
             
@@ -178,7 +166,6 @@ def scene_3():
                     type(mssgs["scene 3.1.2"])
                     short_wait()
                     type(mssgs["scene 3.1.2.1"])
-                    ()
                     print()
                     type("YOU DIED")
                     the_end()
@@ -196,24 +183,20 @@ def scene_3():
                     
         case "2": #ignored the trio
             type(mssgs["scene 3.2"])
-            ()
             type(mssgs["scene 3.2.1"])
     
 def scene_4():
     type(mssgs["scene 4"])
-    ()
     type(mssgs["scene 4 question"])
 
     match get_input(["1", "2"]):
         case "1": #Leave through backdoor
             type(mssgs["scene 4.1"])
-            ()
             type(mssgs["scene 4.1 question"])
             
             match get_input(["1", "2"]):
                 case "1": # you try to run
                     type(mssgs["scene 4.1.1"])
-                    ()
                     print()
                     type("YOU DIED")
                     print()
@@ -221,7 +204,6 @@ def scene_4():
                 
                 case "2": #you try to hide
                     type(mssgs["scene 4.1.2"])
-                    ()
                     print()
                     type("YOU DIED")
                     print()
@@ -229,7 +211,6 @@ def scene_4():
         
         case "2": #Leave through the front
             type(mssgs["scene 4.2"])
-            ()
             type(mssgs["scene 4.2 question"])
 
             match get_input(["1", "2", "3"]):
