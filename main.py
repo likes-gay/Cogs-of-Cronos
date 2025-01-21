@@ -46,7 +46,7 @@ def get_input(choices):
 
 large_title()
 short_wait()
-'''
+
 type("England, 1873.") 
 short_wait()
 type("Corruption has taken it's hold on the city of Belhelm, segregation between the classes of living through physical layers of the city, forcing the poorer population to live in filthy and crime filled streets, housing more citizens that it can handle.")
@@ -71,7 +71,7 @@ short_wait()
 type("Talks of a revolution have been sparking up in the recent months, this is a chance for the lower class to fight against the tyranny that has been oppressing them daily. You being a citizen on the lowest level, are excited to join in.")
 short_wait()
 type("As you clock in to your job as a scrapper, you decide that if you want to fight back, you'll need to craft a robot for battling. Making your way to the piles of scrap, you look around for the coast to be clear... and begin.")
-'''
+
 player_robot = []
 #Day 1
 
