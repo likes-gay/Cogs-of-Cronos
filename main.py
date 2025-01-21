@@ -43,7 +43,6 @@ def get_input(choices):
         
     return user_input
 
-
 large_title()
 short_wait()
 
@@ -73,10 +72,28 @@ short_wait()
 type("As you clock in to your job as a scrapper, you decide that if you want to fight back, you'll need to craft a robot for battling. Making your way to the piles of scrap, you look around for the coast to be clear... and begin.")
 
 player_robot = []
-#Day 1
+player_robot.append(player_select(day=1, part_type="Torso"))
+ 
+ 
+type("Day 2...")
+short_wait()
+type("Talks of the revolution are causing distress and excitement through the streets nearby. Your robot is coming along nicely, and your higherups do not suspect a thing.\n")
+short_wait()
+type("Clocking into work once more, you make your way to the scrap piles again... and begin.")
+#Day 2
+player_robot.append(player_select(day=2, part_type="Head"))
+ 
+ 
+type("Day 3...")
+short_wait()
+type("Due to increased talks of the revolution, security and law enforcement around the lower layers of the city have increased, and suspense has reached an all time high.\n")
+short_wait()
+type("The robot you've been working on is almost at completetion, so for what you believe to be the last time, you step into work, and head for the scrap piles... to begin.")
+#Day 3
+player_robot.append(player_select(day=3, part_type="Legs"))
+ 
 
 computer_robot = computer_select()
-player_robot = computer_select()
 
 
 # Ask for user's robot name
@@ -84,14 +101,24 @@ robot_name = input("What would you like to name your robot? >>> ")
 
 battleAnalysis = GameAnalysis(os.getenv("GH_TOKEN"), robot_name, player_robot, computer_robot)
 
-for i, entry in enumerate(battleAnalysis.analyse_game_scores()):
+analysys = battleAnalysis.analyse_game_scores()
+
+for i, entry in enumerate(analysys):
+
     type(f"---- ROUND {i+1} ----")
     print()
     entryDesc = entry["roundDescription"]
     
     type(entryDesc)
     short_wait()
-    time.wait(30)
+    time.sleep(3)
+
+type("-----------------------------")
+short_wait()
+print()
+type("The overall winnner WAS!!!!")
+type(analysys[0]["battleWinner"])
+
 '''
 type("With a big uproar, it seems as if the revolution has begun.")
 type("After finally crafting your perfect robot, you're set to join the revolution and aid the cause of bringing down the tyrannical and corrupt ruling of the city of Belhelm.")
